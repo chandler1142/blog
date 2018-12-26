@@ -218,6 +218,9 @@
                 } else {
                     tale.alertError(result.msg || '备份失败');
                 }
+            },
+            fail: function (result) {
+                tale.alertError(result.msg || '备份失败');
             }
         });
     }
